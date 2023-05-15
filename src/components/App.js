@@ -2,12 +2,10 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import ContentWrapper from './ContentWrapper';
-import GenresInDb from './GenresInDb';
-import LastMovieInDb from './LastMovieInDb';
-import ContentRowMovies from './ContentRowMovies';
+import ProductsDetail from './ProductsDetail';
+import LastProductDb from './LastProductDb';
+import Categories from './Categories';
 import NotFound from './NotFound';
-import SearchMovies from './SearchMovies';
-
 import SideBar from './SideBar';
 
 function App() {
@@ -19,17 +17,14 @@ function App() {
           <Route exact path="/">
             <ContentWrapper />
           </Route>
-          <Route path="/GenresInDb">
-            <GenresInDb />
+          <Route path="/ProductsDetail">
+            <ProductsDetail/>
           </Route>
-          <Route path="/LastMovieInDb">
-            <LastMovieInDb />
+          <Route path="/LastProductDb">
+            <LastProductDb />
           </Route>
-          <Route path="/ContentRowMovies">
-            <ContentRowMovies />
-          </Route>
-          <Route path="/search">
-            <SearchMovies />
+          <Route path="/Categories">
+            <Categories />
           </Route>
           <Route component={NotFound} />
         </Switch>

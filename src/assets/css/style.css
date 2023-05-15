@@ -1,0 +1,12 @@
+.imgBanner{
+    height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.color{
+    color: #000;
+}
+.colorOsc{
+    color:#464646;
+}
